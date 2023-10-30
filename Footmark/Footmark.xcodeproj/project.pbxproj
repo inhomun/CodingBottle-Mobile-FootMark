@@ -31,6 +31,7 @@
 		9E05D3512AD6732F00F4CA43 /* UITextField++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D3502AD6732F00F4CA43 /* UITextField++.swift */; };
 		9E05D3532AD6734600F4CA43 /* UIButton++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D3522AD6734600F4CA43 /* UIButton++.swift */; };
 		9E05D3552AD6736000F4CA43 /* UIColor++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D3542AD6736000F4CA43 /* UIColor++.swift */; };
+		9E9307362AEFB7E600E8C667 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9307352AEFB7E600E8C667 /* BaseRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		9E05D3502AD6732F00F4CA43 /* UITextField++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField++.swift"; sourceTree = "<group>"; };
 		9E05D3522AD6734600F4CA43 /* UIButton++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton++.swift"; sourceTree = "<group>"; };
 		9E05D3542AD6736000F4CA43 /* UIColor++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor++.swift"; sourceTree = "<group>"; };
+		9E9307352AEFB7E600E8C667 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		9E05D31E2AD5435000F4CA43 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				9E9307332AEFB79F00E8C667 /* Router */,
 				9E05D3252AD5439000F4CA43 /* Config */,
 				9E05D3242AD5438C00F4CA43 /* API */,
 				9E05D3232AD5438700F4CA43 /* DTO */,
@@ -236,6 +239,22 @@
 			path = NameSpace;
 			sourceTree = "<group>";
 		};
+		9E9307332AEFB79F00E8C667 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9E9307342AEFB7D800E8C667 /* BaseRouter */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9E9307342AEFB7D800E8C667 /* BaseRouter */ = {
+			isa = PBXGroup;
+			children = (
+				9E9307352AEFB7E600E8C667 /* BaseRouter.swift */,
+			);
+			path = BaseRouter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -320,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E05D34F2AD6731200F4CA43 /* UIViewController++.swift in Sources */,
+				9E9307362AEFB7E600E8C667 /* BaseRouter.swift in Sources */,
 				9E05D30E2AD5431300F4CA43 /* ViewController.swift in Sources */,
 				9E05D3272AD5439900F4CA43 /* Config.swift in Sources */,
 				9E05D34D2AD672FE00F4CA43 /* UIResponder++.swift in Sources */,
