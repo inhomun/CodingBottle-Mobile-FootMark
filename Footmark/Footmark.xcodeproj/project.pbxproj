@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		9E05D30A2AD5431300F4CA43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D3092AD5431300F4CA43 /* AppDelegate.swift */; };
 		9E05D30C2AD5431300F4CA43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D30B2AD5431300F4CA43 /* SceneDelegate.swift */; };
-		9E05D30E2AD5431300F4CA43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D30D2AD5431300F4CA43 /* ViewController.swift */; };
+		9E05D30E2AD5431300F4CA43 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D30D2AD5431300F4CA43 /* BaseViewController.swift */; };
 		9E05D3132AD5431500F4CA43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E05D3122AD5431500F4CA43 /* Assets.xcassets */; };
 		9E05D3162AD5431500F4CA43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E05D3142AD5431500F4CA43 /* LaunchScreen.storyboard */; };
 		9E05D3272AD5439900F4CA43 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D3262AD5439900F4CA43 /* Config.swift */; };
@@ -31,6 +31,11 @@
 		9E05D3512AD6732F00F4CA43 /* UITextField++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D3502AD6732F00F4CA43 /* UITextField++.swift */; };
 		9E05D3532AD6734600F4CA43 /* UIButton++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D3522AD6734600F4CA43 /* UIButton++.swift */; };
 		9E05D3552AD6736000F4CA43 /* UIColor++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D3542AD6736000F4CA43 /* UIColor++.swift */; };
+		9E76B90A2AFCA78500338E2C /* URLConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E76B9092AFCA78500338E2C /* URLConst.swift */; };
+		9E76B90C2AFCA79B00338E2C /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E76B90B2AFCA79B00338E2C /* NetworkResult.swift */; };
+		9E76B90E2AFCA7A600338E2C /* BaseTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E76B90D2AFCA7A600338E2C /* BaseTargetType.swift */; };
+		9E76B9102AFCA7B200338E2C /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E76B90F2AFCA7B200338E2C /* BaseAPI.swift */; };
+		9E76B9122AFCA7BD00338E2C /* AFLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E76B9112AFCA7BD00338E2C /* AFLogger.swift */; };
 		9E9307362AEFB7E600E8C667 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9307352AEFB7E600E8C667 /* BaseRouter.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +43,7 @@
 		9E05D3062AD5431300F4CA43 /* Footmark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Footmark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E05D3092AD5431300F4CA43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E05D30B2AD5431300F4CA43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9E05D30D2AD5431300F4CA43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9E05D30D2AD5431300F4CA43 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		9E05D3122AD5431500F4CA43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E05D3152AD5431500F4CA43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E05D3172AD5431500F4CA43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +61,11 @@
 		9E05D3502AD6732F00F4CA43 /* UITextField++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField++.swift"; sourceTree = "<group>"; };
 		9E05D3522AD6734600F4CA43 /* UIButton++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton++.swift"; sourceTree = "<group>"; };
 		9E05D3542AD6736000F4CA43 /* UIColor++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor++.swift"; sourceTree = "<group>"; };
+		9E76B9092AFCA78500338E2C /* URLConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConst.swift; sourceTree = "<group>"; };
+		9E76B90B2AFCA79B00338E2C /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		9E76B90D2AFCA7A600338E2C /* BaseTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTargetType.swift; sourceTree = "<group>"; };
+		9E76B90F2AFCA7B200338E2C /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		9E76B9112AFCA7BD00338E2C /* AFLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFLogger.swift; sourceTree = "<group>"; };
 		9E9307352AEFB7E600E8C667 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,8 +139,7 @@
 		9E05D31F2AD5435700F4CA43 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				9E05D33F2AD671F000F4CA43 /* ViewController */,
-				9E05D32E2AD552A800F4CA43 /* View */,
+				9E76B9062AFCA70700338E2C /* Base */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -157,6 +166,11 @@
 			isa = PBXGroup;
 			children = (
 				9E05D32C2AD543BD00F4CA43 /* BaseResponse.swift */,
+				9E76B9092AFCA78500338E2C /* URLConst.swift */,
+				9E76B90B2AFCA79B00338E2C /* NetworkResult.swift */,
+				9E76B90D2AFCA7A600338E2C /* BaseTargetType.swift */,
+				9E76B90F2AFCA7B200338E2C /* BaseAPI.swift */,
+				9E76B9112AFCA7BD00338E2C /* AFLogger.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -196,7 +210,7 @@
 		9E05D33F2AD671F000F4CA43 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				9E05D30D2AD5431300F4CA43 /* ViewController.swift */,
+				9E05D30D2AD5431300F4CA43 /* BaseViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -237,6 +251,15 @@
 				9E05D3462AD6725F00F4CA43 /* Image.swift */,
 			);
 			path = NameSpace;
+			sourceTree = "<group>";
+		};
+		9E76B9062AFCA70700338E2C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9E05D32E2AD552A800F4CA43 /* View */,
+				9E05D33F2AD671F000F4CA43 /* ViewController */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		9E9307332AEFB79F00E8C667 /* Router */ = {
@@ -340,7 +363,8 @@
 			files = (
 				9E05D34F2AD6731200F4CA43 /* UIViewController++.swift in Sources */,
 				9E9307362AEFB7E600E8C667 /* BaseRouter.swift in Sources */,
-				9E05D30E2AD5431300F4CA43 /* ViewController.swift in Sources */,
+				9E05D30E2AD5431300F4CA43 /* BaseViewController.swift in Sources */,
+				9E76B90A2AFCA78500338E2C /* URLConst.swift in Sources */,
 				9E05D3272AD5439900F4CA43 /* Config.swift in Sources */,
 				9E05D34D2AD672FE00F4CA43 /* UIResponder++.swift in Sources */,
 				9E05D3552AD6736000F4CA43 /* UIColor++.swift in Sources */,
@@ -348,11 +372,15 @@
 				9E05D32B2AD543AA00F4CA43 /* DTO.swift in Sources */,
 				9E05D32D2AD543BD00F4CA43 /* BaseResponse.swift in Sources */,
 				9E05D3432AD6722F00F4CA43 /* Font.swift in Sources */,
+				9E76B90C2AFCA79B00338E2C /* NetworkResult.swift in Sources */,
 				9E05D30C2AD5431300F4CA43 /* SceneDelegate.swift in Sources */,
 				9E05D3292AD5439F00F4CA43 /* API.swift in Sources */,
 				9E05D3512AD6732F00F4CA43 /* UITextField++.swift in Sources */,
 				9E05D3532AD6734600F4CA43 /* UIButton++.swift in Sources */,
 				9E05D3302AD6719E00F4CA43 /* BaseView.swift in Sources */,
+				9E76B9122AFCA7BD00338E2C /* AFLogger.swift in Sources */,
+				9E76B9102AFCA7B200338E2C /* BaseAPI.swift in Sources */,
+				9E76B90E2AFCA7A600338E2C /* BaseTargetType.swift in Sources */,
 				9E05D3472AD6725F00F4CA43 /* Image.swift in Sources */,
 				9E05D3492AD6728F00F4CA43 /* UIView++.swift in Sources */,
 				9E05D34B2AD672EB00F4CA43 /* UIStackView++.swift in Sources */,
