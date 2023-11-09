@@ -6,22 +6,35 @@
 //
 
 import Foundation
+import UIKit
 
 struct retrospectDataModel {
-    var footMark: feel
+    let feeling: EventType
     var retrospectTitleLabel: String
 }
 
 @frozen
-enum feel {
+enum EventType {
     case good
     case bad
-    var footMark: String {
+    
+    var image: UIImage {
         switch self {
-        case .good:
-            return "🐾"
         case .bad:
-            return "🐾"
+            return UIImage(systemName: "pawprint.fill")!.withTintColor(UIColor(hex: "F9ACAC"))
+        case .good:
+            return UIImage(systemName: "pawprint")!.withTintColor(UIColor(hex: "B9CDF7"))
         }
+    }
+}
+
+extension retrospectDataModel {
+    
+    static func dummy() -> [retrospectDataModel] {
+        return [retrospectDataModel(feeling: .good, retrospectTitleLabel: "Hello World!"),
+                retrospectDataModel(feeling: .bad, retrospectTitleLabel: "ino!"),
+                retrospectDataModel(feeling: .bad, retrospectTitleLabel: "shinyoung!"),
+                retrospectDataModel(feeling: .good, retrospectTitleLabel: "seonguen!"),
+                retrospectDataModel(feeling: .good, retrospectTitleLabel: "hyeonryeol!")]
     }
 }
