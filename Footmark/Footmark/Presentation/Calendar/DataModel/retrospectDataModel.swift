@@ -8,8 +8,9 @@ import Foundation
 import UIKit
 
 struct retrospectDataModel {
-    let feeling: EventType
+    var feeling: EventType
     var retrospectTitleLabel: String
+    var writeDate: DateComponents
 }
 
 @frozen
@@ -30,10 +31,10 @@ enum EventType {
 extension retrospectDataModel {
     
     static func dummy() -> [retrospectDataModel] {
-        return [retrospectDataModel(feeling: .good, retrospectTitleLabel: "Hello World!"),
-                retrospectDataModel(feeling: .bad, retrospectTitleLabel: "ino!"),
-                retrospectDataModel(feeling: .bad, retrospectTitleLabel: "shinyoung!"),
-                retrospectDataModel(feeling: .good, retrospectTitleLabel: "seonguen!"),
-                retrospectDataModel(feeling: .good, retrospectTitleLabel: "hyeonryeol!")]
+        return [retrospectDataModel(feeling: .good, retrospectTitleLabel: "Hello World!", writeDate: DateComponents(calendar: Calendar.current, year: 2023, month: 11, day: 25)),
+                retrospectDataModel(feeling: .bad, retrospectTitleLabel: "ino!", writeDate: DateComponents(calendar: Calendar.current, year: 2023, month: 11, day: 1)),
+                retrospectDataModel(feeling: .bad, retrospectTitleLabel: "shinyoung!", writeDate: DateComponents(calendar: Calendar.current, year: 2023, month: 11, day: 10)),
+                retrospectDataModel(feeling: .good, retrospectTitleLabel: "seonguen!", writeDate: DateComponents(calendar: Calendar.current, year: 2023, month: 11, day: 11)),
+                retrospectDataModel(feeling: .good, retrospectTitleLabel: "hyeonryeol!", writeDate: DateComponents(calendar: Calendar.current, year: 2023, month: 11, day: 17))]
     }
 }
