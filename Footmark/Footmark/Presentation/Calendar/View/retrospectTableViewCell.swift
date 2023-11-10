@@ -36,14 +36,14 @@ class retrospectTableViewCell: UITableViewCell {
             $0.roundCorners(cornerRadius: 6, maskedCorners: .layerMaxXMaxYCorner)
         }
         retrospectTitleLabel.do {
-            $0.font = UIFont.systemFont(ofSize: 12)
+            $0.font = UIFont.systemFont(ofSize: 20)
         }
     }
     private func setLayout() {
         addSubviews(footPrintImage, retrospectTitleLabel)
         
         footPrintImage.snp.makeConstraints {
-            $0.size.equalTo(10)
+            $0.size.equalTo(20)
             $0.centerY.equalToSuperview()
             $0.leading.equalToSuperview().inset(10)
         }

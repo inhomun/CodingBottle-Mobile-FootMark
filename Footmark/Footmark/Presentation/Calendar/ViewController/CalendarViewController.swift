@@ -22,6 +22,7 @@ final class CalendarViewController: UIViewController {
         setLayout()
         setRegister()
         setDelegate()
+        setNavigate()
 //        addTarget()
         setCalendar()
         reloadDateView(date: Date())
@@ -33,7 +34,7 @@ extension CalendarViewController: UICalendarViewDelegate, UICalendarSelectionSin
     // MARK: - UI Components Property
 
     private func setUI() {
-        
+        self.view.backgroundColor = .white
         calendarView.do {
             $0.backgroundColor = .white
             $0.translatesAutoresizingMaskIntoConstraints = false
@@ -43,6 +44,19 @@ extension CalendarViewController: UICalendarViewDelegate, UICalendarSelectionSin
             $0.showsVerticalScrollIndicator = false
             $0.separatorStyle = .singleLine
         }
+    }
+    private func setNavigate() {
+        let button1 = UIBarButtonItem(image: UIImage(systemName: "plus"), style: .plain, target: self, action: #selector(popToWriteViewController))
+        let button2 = UIBarButtonItem(image: UIImage(systemName: "magnifyingglass"), style: .plain, target: self, action: #selector(button2Tapped))
+        self.navigationItem.rightBarButtonItems = [button1, button2]
+    }
+    
+    @objc func popToWriteViewController() {
+        // 'Button 1'이 눌렸을 때의 동작을 여기에 작성합니다.
+    }
+
+    @objc func button2Tapped() {
+        // 'Button 2'이 눌렸을 때의 동작을 여기에 작성합니다.
     }
     
     private func setLayout() {
