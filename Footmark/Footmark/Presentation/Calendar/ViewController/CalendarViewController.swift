@@ -14,8 +14,9 @@ final class CalendarViewController: UIViewController {
     private lazy var retrospectTableView = UITableView()
     private let dummy = retrospectDataModel.dummy()
     var selectedDate: DateComponents? = nil
-    var isGood: Bool = false
 
+    //MARK: - LifeCycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
@@ -23,7 +24,6 @@ final class CalendarViewController: UIViewController {
         setRegister()
         setDelegate()
         setNavigate()
-//        addTarget()
         setCalendar()
         reloadDateView(date: Date())
     }
@@ -49,14 +49,6 @@ extension CalendarViewController: UICalendarViewDelegate, UICalendarSelectionSin
         let button1 = UIBarButtonItem(image: UIImage(systemName: "plus"), style: .plain, target: self, action: #selector(popToWriteViewController))
         let button2 = UIBarButtonItem(image: UIImage(systemName: "magnifyingglass"), style: .plain, target: self, action: #selector(button2Tapped))
         self.navigationItem.rightBarButtonItems = [button1, button2]
-    }
-    
-    @objc func popToWriteViewController() {
-        // 'Button 1'이 눌렸을 때의 동작을 여기에 작성합니다.
-    }
-
-    @objc func button2Tapped() {
-        // 'Button 2'이 눌렸을 때의 동작을 여기에 작성합니다.
     }
     
     private func setLayout() {
@@ -125,10 +117,21 @@ extension CalendarViewController: UICalendarViewDelegate, UICalendarSelectionSin
             }
             return nil
         }
-    // 달력에서 날짜 선택했을 경우
+
     func dateSelection(_ selection: UICalendarSelectionSingleDate, didSelectDate dateComponents: DateComponents?) {
         selection.setSelected(dateComponents, animated: true)
         selectedDate = dateComponents
         reloadDateView(date: Calendar.current.date(from: dateComponents!))
     }
+    
+    // MARK: - @objc Method
+
+    @objc func popToWriteViewController() {
+        // 'Button 1'이 눌렸을 때의 동작을 여기에 작성합니다.
+    }
+
+    @objc func button2Tapped() {
+        // 'Button 2'이 눌렸을 때의 동작을 여기에 작성합니다.
+    }
+
 }

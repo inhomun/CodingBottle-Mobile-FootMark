@@ -12,8 +12,9 @@ import Then
 
 class retrospectTableViewCell: UITableViewCell {
     
+    //MARK: - UI Components
+
     static let identifier = "retrospectTableViewCell"
-    
     private let footPrintImage = UIImageView()
     private let retrospectTitleLabel = UILabel()
     
@@ -28,6 +29,8 @@ class retrospectTableViewCell: UITableViewCell {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
+    
+    // MARK: - UI Components Property
     
     private func setStyle() {
         separatorInset.left = 0
