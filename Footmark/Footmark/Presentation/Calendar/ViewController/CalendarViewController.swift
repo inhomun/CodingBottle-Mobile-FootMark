@@ -46,7 +46,7 @@ extension CalendarViewController: UICalendarViewDelegate, UICalendarSelectionSin
         }
     }
     private func setNavigate() {
-        let button1 = UIBarButtonItem(image: UIImage(systemName: "plus"), style: .plain, target: self, action: #selector(popToWriteViewController))
+        let button1 = UIBarButtonItem(image: UIImage(systemName: "plus"), style: .plain, target: self, action: #selector(presentToWriteViewController))
         let button2 = UIBarButtonItem(image: UIImage(systemName: "magnifyingglass"), style: .plain, target: self, action: #selector(button2Tapped))
         self.navigationItem.rightBarButtonItems = [button1, button2]
     }
@@ -126,8 +126,10 @@ extension CalendarViewController: UICalendarViewDelegate, UICalendarSelectionSin
     
     // MARK: - @objc Method
 
-    @objc func popToWriteViewController() {
-        // 'Button 1'이 눌렸을 때의 동작을 여기에 작성합니다.
+    @objc func presentToWriteViewController() {
+        let viewController = retrospectWriteViewController()
+        let navigationController = UINavigationController(rootViewController: viewController)
+        self.present(navigationController, animated: true, completion: nil)
     }
 
     @objc func button2Tapped() {

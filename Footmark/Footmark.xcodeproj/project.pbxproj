@@ -37,6 +37,7 @@
 		E36B663D2AFB7DC8006888C8 /* retrospectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36B663C2AFB7DC8006888C8 /* retrospectTableViewCell.swift */; };
 		E3A9A2C92AFE3CB4005D6E80 /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A9A2C82AFE3CB4005D6E80 /* WriteView.swift */; };
 		E3A9A2CB2AFE3CC2005D6E80 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A9A2CA2AFE3CC2005D6E80 /* WriteViewController.swift */; };
+		E3C1062B2B37F6FE00BD0110 /* retrospectWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C1062A2B37F6FE00BD0110 /* retrospectWriteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		E36B663C2AFB7DC8006888C8 /* retrospectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = retrospectTableViewCell.swift; sourceTree = "<group>"; };
 		E3A9A2C82AFE3CB4005D6E80 /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
 		E3A9A2CA2AFE3CC2005D6E80 /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
+		E3C1062A2B37F6FE00BD0110 /* retrospectWriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = retrospectWriteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,6 +290,7 @@
 		E31AFE292AF0F3350066448E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E3C1062A2B37F6FE00BD0110 /* retrospectWriteViewController.swift */,
 				E31AFE2D2AF0F3790066448E /* CalendarViewController.swift */,
 			);
 			path = ViewController;
@@ -428,6 +431,7 @@
 				9E05D3512AD6732F00F4CA43 /* UITextField++.swift in Sources */,
 				E3A9A2C92AFE3CB4005D6E80 /* WriteView.swift in Sources */,
 				9E05D3532AD6734600F4CA43 /* UIButton++.swift in Sources */,
+				E3C1062B2B37F6FE00BD0110 /* retrospectWriteViewController.swift in Sources */,
 				9E05D3302AD6719E00F4CA43 /* BaseView.swift in Sources */,
 				9E05D3472AD6725F00F4CA43 /* Image.swift in Sources */,
 				9E05D3492AD6728F00F4CA43 /* UIView++.swift in Sources */,
